@@ -21,22 +21,6 @@
 
 # Learn more and get the most recent version at http://devstack.org
 
-# Make sure custom grep options don't get in the way
-unset GREP_OPTIONS
-
-# Sanitize language settings to avoid commands bailing out
-# with "unsupported locale setting" errors.
-unset LANG
-unset LANGUAGE
-LC_ALL=C
-export LC_ALL
-
-# Make sure umask is sane
-umask 022
-
-# Not all distros have sbin in PATH for regular users.
-PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin
-
 # Keep track of the devstack directory
 TOP_DIR=$(cd $(dirname "$0") && pwd)
 
