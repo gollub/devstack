@@ -4,3 +4,5 @@ qemu-utils
 libpq-dev
 open-iscsi
 open-iscsi-utils # Deprecated since quantal dist:precise
+libxml2-dev
+libxslt-dev
